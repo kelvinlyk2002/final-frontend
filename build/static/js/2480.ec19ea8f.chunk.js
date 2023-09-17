@@ -1,0 +1,1 @@
+(self.webpackChunksoft_ui_dashboard_react=self.webpackChunksoft_ui_dashboard_react||[]).push([[2480],{42480:function(){}}]);
