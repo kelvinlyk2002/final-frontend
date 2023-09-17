@@ -13,6 +13,7 @@ function TopTrendingProjects({projectsStat}) {
   const addTopItemToArray = (itemArray, newItem, key, size) => {
     if(itemArray.length < size){
       itemArray.push(newItem);
+      itemArray.sort((a, b) => b[key] - a[key]);  
       return itemArray;
     }
     if(itemArray[size - 1][key] < newItem[key]){
