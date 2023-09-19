@@ -6,6 +6,7 @@ import CommunityAction from "layouts/community-action";
 import SearchReseult from "layouts/search-result";
 import ContributionHistory from "layouts/contributionHistory";
 import VotingHistory from "layouts/votingHistory";
+import Faucet from "layouts/faucet";
 
 // Soft UI Dashboard React icons
 import Icon from "@mui/material/Icon";
@@ -28,6 +29,15 @@ const routes = [
     route: "/dashboard",
     icon: <Icon fontSize="small" color="inherit">dashboard</Icon>,
     component: <Dashboard />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Faucet",
+    key: "faucet",
+    route: "/faucet",
+    icon: <Icon fontSize="small" color="inherit">opacity</Icon>,
+    component: <Faucet />,
     noCollapse: true,
   },
   // hidden pages
